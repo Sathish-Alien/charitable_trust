@@ -8,7 +8,6 @@ import Contact from "./pages/Contact";
 //componentes
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer/Footer";
-import AnimationLoader from "./components/AnimationLoader";
 import "./App.css";
 import Bg from "./assets/bg_original.jpeg";
 import { Button } from "@mui/material";

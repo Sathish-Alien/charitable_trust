@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 // mui
 import {
-    Typography,
     Box,
     Stack,
 } from "@mui/material";
@@ -9,8 +8,6 @@ import {
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 // components
-import Title from './Title'
-import Paragraph from './Paragraph'
 import Temple from "../assets/temple.jpg"
 
 const Gallery = () => {
@@ -20,7 +17,7 @@ const Gallery = () => {
     const imageData = [
         {
             alt: 'image1',
-            url:  Temple
+            url: Temple
         },
         {
             alt: 'image2',
@@ -32,7 +29,7 @@ const Gallery = () => {
         },
         {
             alt: "image4",
-            url: Temple 
+            url: Temple
         },
         {
             alt: "image5",
@@ -61,40 +58,6 @@ const Gallery = () => {
                 display: { xs: 'flex' },
             }}
         >
-            {/* <Box
-            component='section'
-            sx={{
-                paddingBottom: 3,
-            }}
-            >
-                <Title 
-                text={
-                    'Plans and dimension'
-                }
-                textAlign={'center'}
-                />
-                <Typography
-                variant='h5'
-                component='h4'
-                align='center'
-                sx={{
-                    paddingTop: 1,
-                }}
-                >
-                    Rooms Gallery
-                </Typography>
-                <Paragraph text={
-                    'We have more 5000 reviews and our\
-                    customers trust on our quality product\
-                    and trust own our product. If you interested,\
-                    contact us.'
-                } 
-                maxWidth = {'sm'}
-                mx={'auto'}
-                textAlign={'center'}
-                />
-            </Box> */}
-
             <Box sx={{
                 maxWidth: 700,
                 width: '100%',
