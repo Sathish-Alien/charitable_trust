@@ -51,29 +51,21 @@ function App() {
   const kannada = () => setLanguage("ದಾನ ಮಾಡಿ");
   const english = () => setLanguage("Donate");
 
-  // if (language === "Donate") {
-  //   setTimeout(() => {
-  //     kannada();
-  //   }, 3000);
-  // } else {
-  //   setTimeout(() => {
-  //     english();
-  //   }, 3000);
-  // }
-
-  useEffect(() => {
-    setHomeFinder(false)
-
-    // return () => {
-    //   setHomeFinder(false)
-    // }
-  }, [homeFinder])
+  if (language === "Donate") {
+    setTimeout(() => {
+      kannada();
+    }, 3000);
+  } else {
+    setTimeout(() => {
+      english();
+    }, 3000);
+  }
 
   return (
     <>
       {/* {<img src={Bg} alt="" className="bg-main" />} */}
       {
-        loader === false && window.location.pathname !== "/payment" && <Button variant="outlined" className="translateBtn" onClick={handleTranslate}>
+        loader === false && <Button variant="outlined" className="translateBtn" onClick={handleTranslate}>
           {
             lang ? "A" : "ಕ"
           }
@@ -83,7 +75,7 @@ function App() {
 
       <BrowserRouter>
         {
-          window.location.pathname !== "/payment" && <Link to="/payment">
+          loader === false && window.location.pathname !== "/payment" && <Link to="/payment">
             <Button variant="outlined" className="donateBtn rspBtn">
               {language}
             </Button >
@@ -119,8 +111,7 @@ function App() {
         }
 
       </BrowserRouter>
-      {window.location.pathname.includes("payment")
-        ? null : <Footer />}
+      {loader === false && <Footer />}
     </>
   );
 }

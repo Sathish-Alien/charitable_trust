@@ -6,7 +6,7 @@ import Gallery from "./Gallery";
 function Devotee() {
   return (
     <Container>
-      <Box>
+      <Box sx={{p: "12% 0"}}>
         <Gallery />
       </Box>
     </Container>
