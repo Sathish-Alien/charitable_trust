@@ -19,9 +19,12 @@ import store from "./store";
 import { setLang, setLoader } from "./common/action";
 import LoaderWrapper from "./assets/ohm_circel.png";
 import Ohm from "./assets/Om_symbol.png";
+import Devotee from "./components/FullContent";
 
 function App() {
   const [language, setLanguage] = useState("Donate");
+  const [homeFinder, setHomeFinder] = useState(false);
+
   const getLang = useSelector((state) => state.setLangReducerResult);
   const { lang } = getLang;
 
@@ -58,22 +61,30 @@ function App() {
   //   }, 3000);
   // }
 
+  useEffect(() => {
+    setHomeFinder(false)
+
+    // return () => {
+    //   setHomeFinder(false)
+    // }
+  }, [homeFinder])
+
   return (
     <>
       {/* {<img src={Bg} alt="" className="bg-main" />} */}
-      {/* {
-        !loader && window.location.pathname !== "/payment" && <Button variant="outlined" className="translateBtn" onClick={handleTranslate}>
+      {
+        loader === false && window.location.pathname !== "/payment" && <Button variant="outlined" className="translateBtn" onClick={handleTranslate}>
           {
-            lang ? "English" : "Kannada"
+            lang ? "A" : "ಕ"
           }
         </Button >
-      } */}
+      }
       {/* "homepage": "http://files.axninfotech.com/", */}
 
       <BrowserRouter>
         {
-          !loader && !window.location.pathname.includes("payment") && <Link to="/payment">
-            <Button variant="outlined" className="donateBtn">
+          window.location.pathname !== "/payment" && <Link to="/payment">
+            <Button variant="outlined" className="donateBtn rspBtn">
               {language}
             </Button >
           </Link>
@@ -95,19 +106,21 @@ function App() {
           </div>
         }
         {
-          !loader && <Routes>
+          loader === false && <Routes>
             {/* <Suspense fallback={<AnimationLoader />}> */}
             <Route path="/" element={<Home loader={loader} setLoader={setLoader} />} />
-            <Route path="/about" element={<About />} />
+            <Route path="/yaga" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/content" element={<FullContent />} />
             <Route path="/payment" element={<Payment />} />
+            <Route path="/devotee" element={<Devotee />} />
             {/* </Suspense> */}
           </Routes>
         }
 
       </BrowserRouter>
-      {window.location.pathname.includes("payment") ? null : <Footer loader={loader} />}
+      {window.location.pathname.includes("payment")
+        ? null : <Footer />}
     </>
   );
 }

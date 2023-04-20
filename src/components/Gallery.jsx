@@ -1,6 +1,6 @@
-import React,{ useState } from 'react'
+import React, { useState } from 'react'
 // mui
-import { 
+import {
     Typography,
     Box,
     Stack,
@@ -11,39 +11,39 @@ import { Carousel } from "react-responsive-carousel";
 // components
 import Title from './Title'
 import Paragraph from './Paragraph'
-
+import Temple from "../assets/temple.jpg"
 
 const Gallery = () => {
-    
+
     const [currentIndex, setCurrentIndex] = useState();
 
     const imageData = [
         {
             alt: 'image1',
-            url: 'https://images.pexels.com/photos/259751/pexels-photo-259751.jpeg?cs=srgb&dl=pexels-pixabay-259751.jpg&fm=jpg'
+            url:  Temple
         },
         {
             alt: 'image2',
-            url: 'https://images.pexels.com/photos/5411784/pexels-photo-5411784.jpeg?cs=srgb&dl=pexels-andrea-davis-5411784.jpg&fm=jpg'
+            url: Temple
         },
         {
             alt: "image3",
-            url: 'https://images.pexels.com/photos/356809/pexels-photo-356809.jpeg?cs=srgb&dl=pexels-daniel-frank-356809.jpg&fm=jpg'
+            url: Temple
         },
         {
             alt: "image4",
-            url: 'https://images.pexels.com/photos/6267516/pexels-photo-6267516.jpeg?cs=srgb&dl=pexels-get-lost-mike-6267516.jpg&fm=jpg'
+            url: Temple 
         },
         {
             alt: "image5",
-            url: 'https://images.pexels.com/photos/667838/pexels-photo-667838.jpeg?cs=srgb&dl=pexels-huseyn-kamaladdin-667838.jpg&fm=jpg'
+            url: Temple
         },
     ];
-  
+
     const renderSlides = imageData.map((image) => (
-    <div key={image.alt}>
-        <img src={image.url} alt={image.alt} />
-    </div>
+        <div key={image.alt}>
+            <img src={image.url} alt={image.alt} />
+        </div>
     ));
 
 
@@ -53,13 +53,13 @@ const Gallery = () => {
 
     return (
         <Stack
-        direction='column'
-        justifyContent= 'center'
-        alignItems= 'center'
-        sx={{
-            pt: "1%",
-            display: { xs: 'flex'},
-        }}
+            direction='column'
+            justifyContent='center'
+            alignItems='center'
+            sx={{
+                pt: "1%",
+                display: { xs: 'flex' },
+            }}
         >
             {/* <Box
             component='section'
@@ -94,24 +94,24 @@ const Gallery = () => {
                 textAlign={'center'}
                 />
             </Box> */}
-            
-            <Box sx={{ 
+
+            <Box sx={{
                 maxWidth: 700,
                 width: '100%',
             }}>
                 <Carousel
-                centerSlidePercentage={40}
-                thumbWidth={180}
-                dynamicHeight={false}
-                centerMode={false}
-                showArrows={false}
-                autoPlay={false}
-                infiniteLoop={true}
-                selectedItem={imageData[currentIndex]}
-                onChange={handleChange}
-                className="carousel-container"
+                    centerSlidePercentage={40}
+                    thumbWidth={180}
+                    dynamicHeight={false}
+                    centerMode={false}
+                    showArrows={false}
+                    autoPlay={false}
+                    infiniteLoop={true}
+                    selectedItem={imageData[currentIndex]}
+                    onChange={handleChange}
+                    className="carousel-container"
                 >
-                {renderSlides}
+                    {renderSlides}
                 </Carousel>
             </Box>
         </Stack>

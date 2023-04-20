@@ -39,18 +39,7 @@ const Footer = () => {
 
     <BoxRow
       component='footer'
-      sx={window.location.pathname.includes("payment") ? {
-        py: 4,
-        px: 2,
-        display: 'flex',
-        justifyContent: "center",
-        backgroundColor: "rgba(225, 225, 225, 0.5)",
-        textAlign: "center",
-        fontSize: "70%",
-        fontWeight: "600",
-        position: "fixed",
-        bottom: 0
-      } : {
+      sx={{
         py: 4,
         px: 2,
         display: 'flex',

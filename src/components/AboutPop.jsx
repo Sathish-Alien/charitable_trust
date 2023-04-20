@@ -38,11 +38,11 @@ export default function AboutPop(props) {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Link to="/about">
+        <Link to="/yaga">
           <Box sx={style}>
             <Grid container sx={{ mt: "2%" }}>
-              <Grid item xs={12} md={12} lg={12}>
-                <img src={FirePit} style={{ width: "100%", height: "100%" }} />
+              <Grid item xs={12} md={12} lg={12} sx={{ display: "grid", placeItems: "center" }}>
+                <img src={FirePit} className="popFirePit" />
               </Grid>
               <Grid item xs={12} md={12} lg={12}>
                 <Box sx={{ p: "2%" }}>

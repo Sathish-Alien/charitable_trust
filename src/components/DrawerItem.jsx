@@ -20,6 +20,7 @@ import InfoIcon from '@mui/icons-material/Info';
 import MenuIcon from '@mui/icons-material/Menu';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
+import PeopleIcon from '@mui/icons-material/People';
 
 const drawerWidth = 240;
 
@@ -39,15 +40,20 @@ const itemList = [
     to: "/"
   },
   {
-    text: "About",
+    text: "Yaga",
     icon: <InfoIcon />,
-    to: "/about"
+    to: "/yaga"
+  },
+  {
+    text: "Devotee",
+    icon: <PeopleIcon />,
+    to: "/devotee"
   },
   {
     text: "Contact",
     icon: <EmailIcon />,
     to: "/contact"
-  }
+  },
 ];
 
 

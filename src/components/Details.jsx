@@ -51,17 +51,17 @@ const Details = () => {
         }</span></Typography>
       </Box>
       <Box style={{ width: "90%" }}>
-        <Map height={300} defaultCenter={[12.9716, 77.5946]} defaultZoom={11}>
+        <Map height={300} defaultCenter={[12.426041617001717, 76.68140564113774]} defaultZoom={11}>
           <ZoomControl />
           <Marker
             width={50}
-            anchor={[12.9716, 77.5946]}
+            anchor={[12.426041617001717, 76.68140564113774]}
             color={color}
             onClick={() => setHue(hue + 20)}
           />
           <Marker
             width={50}
-            anchor={[12.9716, 77.5946]}
+            anchor={[12.426041617001717, 76.68140564113774]}
             color={color}
             onClick={() => setHue(hue + 20)}
           >
