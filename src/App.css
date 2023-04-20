@@ -1,0 +1,272 @@
+/* .bg-main {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+} */
+
+html {
+    background: url("./assets/bg_charity.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.centeringElement {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.ohmCircle {
+    animation: ohmCircle 5s forwards;
+}
+
+.ohmsymbol {
+    width: 40%;
+    position: absolute;
+    top: 30%;
+    right: 30%;
+    border-radius: 50%;
+}
+
+.animationWrapper {
+    width: 40%;
+    position: relative;
+    animation: faded 5s forwards;
+}
+
+.welcomeHands {
+    animation: hands 2s forwards;
+}
+
+.getStartGrids {
+    position: relative;
+    background-color: transparent;
+    margin-top: 10%;
+}
+
+.ohmsymbolHome {
+    width: 40%;
+    position: absolute;
+    top: 30%;
+    right: 30%;
+    border-radius: 50%;
+}
+
+.animationWrapperHome {
+    width: 50%;
+    position: relative;
+    margin-top: 17%;
+}
+
+.centeringElementHome {
+    display: grid;
+    place-items: center;
+}
+
+.trustName {
+    font-size: 100% !important;
+    font-family: 'Roboto Slab', serif;
+    text-transform: uppercase;
+    font-weight: 600 !important;
+    color: #000;
+    margin-top: 8% !important;
+}
+
+.trustAddress {
+    font-size: 100%;
+    font-family: 'Roboto Slab', serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #000;
+}
+
+.donateBtn {
+    color: #fff !important;
+    text-transform: capitalize !important;
+    letter-spacing: 1px !important;
+    /* padding: 1.5% 4.5% !important; */
+    border: 1px solid transparent !important;
+    position: fixed !important;
+    right: 0;
+    top: 65%;
+    background-color: #fc7806 !important;
+    border-radius: 8px 0 0 8px !important;
+    z-index: 6;
+    width: 130px;
+}
+
+.translateBtn {
+    color: #fff !important;
+    text-transform: capitalize !important;
+    letter-spacing: 1px !important;
+    /* padding: 1.5% 4.5% !important; */
+    border: 1px solid transparent !important;
+    position: fixed !important;
+    right: 0;
+    top: 58%;
+    background-color: #fc7806 !important;
+    border-radius: 8px 0 0 8px !important;
+    z-index: 6;
+    width: 130px;
+}
+
+.firePit {
+    background-image: url("./assets/firepit.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.readMoreWrapper {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.chakraImg {
+    width: 10%;
+}
+
+.aboutHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2%;
+}
+
+.aboutHeader h4 span {
+    font-size: 100%;
+    font-family: 'Roboto Slab', serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #000;
+}
+
+.centeringElementMain {
+    display: grid;
+    place-items: center;
+}
+
+.pigeon-attribution {
+    display: none;
+}
+
+.aboutFirePit {
+    width: 40%;
+}
+
+.paymentText {
+    background-color: #fff !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #fc7806;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #fc7806;
+}
+
+/* .MuiTableCell-root {
+    font-size: 50% !important;
+} */
+
+.MuiTableHead-root .MuiTableCell-root {
+    background-color: rgba(225, 225, 225, 0.25) !important;
+    color: #fff !important;
+    font-weight: 600 !important;
+}
+
+.MuiOutlinedInput-input {
+    padding: 2% !important;
+}
+
+@keyframes ohmCircle {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+
+    }
+}
+
+@keyframes hands {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes faded {
+    0% {
+        opacity: 0.5;
+    }
+
+    25% {
+        opacity: 0;
+
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    75% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.aboutPopText {
+    font-size: 70% !important;
+}
+
+.paymentWrapper {
+    display: grid;
+    place-items: center;
+    margin: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .aboutFirePit {
+        width: 70%;
+        margin: 2% 0;
+    }
+
+    .aboutPopText {
+        font-size: 6px !important;
+    }
+
+    .paymentWrapper {
+        height: 90vh;
+        display: grid;
+        place-items: center;
+        margin: auto;
+    }
+
+}
