@@ -99,7 +99,7 @@ const DrawerItem = (props) => {
           </IconButton>
         </DrawerHeader>
         <Divider />
-        <List>
+        <List onClick={() => setOpen(false)} >
           {itemList.map((item) => {
             const { text } = item;
             return (

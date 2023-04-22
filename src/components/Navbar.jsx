@@ -16,7 +16,7 @@ import {
 import DrawerItem from "./DrawerItem";
 // rotas
 import { Link } from "react-router-dom";
-import Logo from "../assets/logo.png"
+import Logo from "../assets/logo2.png"
 import { useDispatch, useSelector } from "react-redux";
 import { setLang } from "../common/action";
 
@@ -54,15 +54,13 @@ const Navbar = () => {
       to: "/yaga",
     },
     {
-      text: "Contact",
-      to: "/contact",
-    },
-
-    {
       text: "Devotee",
       to: "/devotee",
     },
-
+    {
+      text: "Contact",
+      to: "/contact",
+    },
   ];
 
   const handleTranslate = () => {
@@ -86,10 +84,10 @@ const Navbar = () => {
     >
       <StyledToolbar>
         <div style={{ display: "flex", justifyContent: "flex-start", alignItems: "center" }}>
-          <img src={Logo} alt='' width={"7%"} style={{ marginRight: "8px" }} />
-          <Typography variant="h6" component="h2">
+          <img src={Logo} alt='' width={"8%"} style={{ marginRight: "8px", padding: "2%" }} />
+          {/* <Typography variant="h6" component="h2">
             CHARITABLE TRUST
-          </Typography>
+          </Typography> */}
         </div>
         <ClickAwayListener onClickAway={() => setOpen(false)}>
           <Box sx={{ display: { xs: "block", sm: "none" } }}>

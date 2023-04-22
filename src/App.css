@@ -48,16 +48,16 @@ body {
 }
 
 .ohmsymbolHome {
-    width: 40%;
-    position: absolute;
+    width: 100px;
+    /* position: absolute; */
     top: 30%;
     right: 30%;
     border-radius: 50%;
 }
 
 .animationWrapperHome {
-    width: 50%;
-    position: relative;
+    /* width: 50%;
+    position: relative; */
     margin-top: 17%;
 }
 
@@ -132,6 +132,11 @@ body {
     width: 10%;
 }
 
+.godImg {
+    width: 72px !important;
+    height: 72px !important;
+}
+
 .aboutHeader {
     display: flex;
     justify-content: space-between;
@@ -204,6 +209,14 @@ th {
     padding: 8px;
 }
 
+.spanFont {
+    font-size: 18px !important;
+}
+
+.paraFOnt {
+    font-size: 12px !important;
+}
+
 @keyframes ohmCircle {
     from {
         transform: rotate(0deg);
@@ -268,6 +281,75 @@ th {
     margin-bottom: 0 !important;
 }
 
+.resbox {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    /* Set a maximum width for the modal */
+    width: 100%;
+    height: auto;
+}
+
+.dwnldBtn {
+    color: #fff !important;
+    text-transform: capitalize !important;
+    letter-spacing: 1px !important;
+    /* padding: 1.5% 4.5% !important; */
+    border: 1px solid transparent !important;
+    background-color: #fc7806 !important;
+    border-radius: 8px !important;
+    z-index: 6;
+    width: 150px;
+    margin: 32px !important;
+}
+
+.mt-12 {
+    margin-top: 12px;
+}
+
+.devoteeImg {
+    width: 100%;
+    height: 100px;
+}
+
+.btnWrapper {
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.dateWrapper {
+    width: 100%;
+    text-align: center;
+    margin: 2% 0;
+}
+
+/* Media query for screens up to 768px */
+@media (max-width: 768px) {
+    .resbox {
+        max-width: 90%;
+        /* Reduce the maximum width of the modal */
+        padding: 10px;
+        /* Reduce the padding of the modal */
+    }
+}
+
+/* Media query for screens up to 480px */
+@media (max-width: 480px) {
+    .resbox {
+        max-width: 80%;
+        /* Further reduce the maximum width of the modal */
+        font-size: 14px;
+        /* Reduce the font size of the modal */
+    }
+}
+
 @media only screen and (max-width: 600px) {
     .aboutFirePit {
         width: 70%;
@@ -299,6 +381,14 @@ th {
         border-collapse: collapse;
         width: 100%;
         font-size: 55%;
+    }
+
+    .spanFont {
+        font-size: 14px !important;
+    }
+
+    .paraFOnt {
+        font-size: 8px !important;
     }
 
 }

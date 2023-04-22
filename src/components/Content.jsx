@@ -11,6 +11,8 @@ import {
   TableRow,
   TableCell,
   TableBody,
+  Avatar,
+  Button,
 } from "@mui/material";
 // icons
 import SportsGymnasticsIcon from "@mui/icons-material/SportsGymnastics";
@@ -22,10 +24,14 @@ import WifiPasswordIcon from "@mui/icons-material/WifiPassword";
 // components
 import Title from "./Title";
 import Paragraph from "./Paragraph";
-import FirePit from "../assets/firepit.gif";
+import FirePit from "../assets/FirePit2.gif";
 import Chakra1 from "../assets/chakra1.png";
 import Chakra2 from "../assets/shanka2.png";
+import God from "../assets/god.jpeg"
 import { useSelector } from "react-redux";
+import Pdf from "../assets/pdf.pdf"
+import Devotee1 from "../assets/devotee1.jpg"
+import Devotee2 from "../assets/devotee2.jpg";
 
 const Content = () => {
   const getLang = useSelector((state) => state.setLangReducerResult)
@@ -39,27 +45,34 @@ const Content = () => {
         flexDirection: "row",
         justifyContent: "center",
         alignItems: "center",
-        py: 10,
+        py: 4,
         px: 2,
         position: "relative",
       }}
     >
       {/* <Grid item xs={12} sm={12} md={5} component="section"> */}
-      <Box className="aboutHeader">
+      <Avatar src={God} alt="" className="godImg" />
+      <Box className="aboutHeader mt-12">
         <img src={Chakra1} className="chakraImg" />
-        <Typography component="h4" fontSize={"100%"} textAlign={"center"}>
+        <Typography component="h4" textAlign={"center"} fontWeight={600}>
           {
-            lang ? "ಲೋಕ ಕಲ್ಯಾಣಾರ್ಥಕ್ಕಾಗಿ – ಶ್ರೀ ಸುದರ್ಶನ ಮಹಾಯಾಗ" : "Shri Sudarshana Mahayaga"
+            lang ? <div style={{ display: "flex", justifyContent: "center", alignItems: "center", flexWrap: "wrap" }}><p className="paraFont">ಲೋಕ ಕಲ್ಯಾಣಾರ್ಥಕ್ಕಾಗಿ – </p><span className="spanFont">ಶ್ರೀ ಸುದರ್ಶನ ಮಹಾಯಾಗ</span></div> : "Shri Sudarshana Mahayaga"
           }
         </Typography>
         <img src={Chakra2} className="chakraImg" />
+      </Box>
+      <Box className="dateWrapper">
+        {
+          lang ? <h4>ದಿನಾಂಕ: 09.06.2023 ರಿಂದ 11.06.2023</h4> : <h4>Date : 09.06.2023 to 11.06.2023</h4>
+        }
+
       </Box>
       <Box sx={{ pb: "2%" }}>
         <div className="centeringElementMain">
           <img src={FirePit} className="aboutFirePit" />
         </div>
       </Box>
-      <Box sx={{ p: "12%" }}>
+      <Box sx={{ p: "12% 12% 0 12%" }}>
         {
           lang ?
             <table>
@@ -197,6 +210,26 @@ const Content = () => {
               </tr>
             </table>
         }
+      </Box>
+      <Box className="btnWrapper">
+        <a href={Pdf}
+          target="_blank"
+          rel="noopener noreferrer"><Button className="dwnldBtn" >Download</Button></a>
+      </Box>
+      <Box sx={{ px: "12%", width: "100%" }}>
+        <Grid container spacing={2} sx={{ placeContent: "flex-start" }}>
+          <Grid item xs={4}>
+            <div style={{ width: "150px" }}>
+              <img src={Devotee1} alt="" className="devoteeImg" />
+            </div>
+          </Grid>
+          <Grid item xs={4}>
+            <div style={{ width: "150px" }}>
+              <img src={Devotee2} alt="" className="devoteeImg" />
+            </div>
+          </Grid>
+          <Grid item xs={4}></Grid>
+        </Grid>
       </Box>
       {/* </Grid> */}
     </Grid >

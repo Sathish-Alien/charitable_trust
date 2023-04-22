@@ -5,7 +5,7 @@ import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import { Card, CardContent, CardMedia, Grid } from "@mui/material";
 import { Link } from "react-router-dom";
-import FirePit from "../assets/firepit.gif";
+import FirePit from "../assets/FirePit2.gif";
 import { useSelector } from "react-redux";
 
 const style = {
@@ -39,7 +39,7 @@ export default function AboutPop(props) {
         aria-describedby="modal-modal-description"
       >
         <Link to="/yaga">
-          <Box sx={style}>
+          <Box sx={style} className="resbox">
             <Grid container sx={{ mt: "2%" }}>
               <Grid item xs={12} md={12} lg={12} sx={{ display: "grid", placeItems: "center" }}>
                 <img src={FirePit} className="popFirePit" />

@@ -9,7 +9,7 @@ import Ohm from "../assets/Om_symbol.png"
 import AboutPop from './AboutPop';
 import { setLang } from '../common/action';
 import { useDispatch, useSelector } from 'react-redux';
-import Logo from "../assets/logo.png"
+import Logo from "../assets/logo2.png"
 
 const Header = () => {
     const getLang = useSelector((state) => state.setLangReducerResult)
@@ -67,10 +67,10 @@ const Header = () => {
             }}>
                 <Box className='centeringElementHome'>
                     <div className='animationWrapperHome'>
-                        <img src={LoaderWrapper} style={{
+                        {/* <img src={""} style={{
                             width: "100%"
-                        }} alt="" className='ohmCircleHome' />
-                        <img src={Ohm} alt="" className='ohmsymbolHome' />
+                        }} alt="" className='ohmCircleHome' /> */}
+                        <img src={Logo} alt="" className='ohmsymbolHome' />
                     </div>
                 </Box>
                 <Box>

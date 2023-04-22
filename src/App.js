@@ -66,7 +66,7 @@ function App() {
       {
         loader === false && <Button variant="outlined" className="translateBtn" onClick={handleTranslate}>
           {
-            lang ? "A" : "ಕ"
+            lang ? "English" : "ಕನ್ನಡ"
           }
         </Button >
       }
