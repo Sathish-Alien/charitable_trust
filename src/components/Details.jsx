@@ -37,7 +37,7 @@ const Details = () => {
         onSubmit={handleSubmit}
         sx={{
           mt: 1,
-          py: 2,
+          py: 1,
         }}
       >
         <Typography component="p" sx={{ position: "relative", textAlign: "center", mt: "2%" }}><span className='trustAddress'>{
@@ -46,9 +46,12 @@ const Details = () => {
         <Typography component="p" sx={{ position: "relative", textAlign: "center", mt: "1%" }}><span className='trustAddress'>{
           lang ? "ಮಂಡ್ಯ ಜಿಲ್ಲೆ – 571438" : "Mandya District – 571438"
         }</span></Typography>
-        {/* <Typography component="p" sx={{ position: "relative", textAlign: "center", mt: "1%" }}><span className='trustAddress'>{
-          lang ? "ದಿನಾಂಕ: 09.06.2023 ರಿಂದ 11.06.2023" : "Date : 09.06.2023 to 11.06.2023"
-        }</span></Typography> */}
+        <Typography component="p" sx={{ position: "relative", textAlign: "center", mt: "1%" }}><span className='trustAddress'>
+          Contact : 9108571160,8296386090,7019201418
+        </span></Typography>
+        <Typography component="p" sx={{ position: "relative", textAlign: "center", mt: "1%" }}><span className='trustAddress'>
+          Email : omvishwamahagurubhagavan05@gmail.com
+        </span></Typography>
       </Box>
       <Box style={{ width: "90%" }}>
         <Map height={300} defaultCenter={[12.426041617001717, 76.68140564113774]} defaultZoom={11}>

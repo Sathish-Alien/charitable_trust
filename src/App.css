@@ -330,6 +330,17 @@ th {
     margin: 2% 0;
 }
 
+.devoteeWrapper {
+    width: 150px;
+}
+
+.centeringFlex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 60%;
+}
+
 /* Media query for screens up to 768px */
 @media (max-width: 768px) {
     .resbox {
@@ -391,7 +402,20 @@ th {
         font-size: 8px !important;
     }
 
+    .trustAddress {
+        font-size: 50%;
+        font-family: 'Roboto Slab', serif;
+        text-transform: uppercase;
+        font-weight: 500;
+        color: #000;
+    }
+
+    .devoteeWrapper {
+        width: 100px;
+    }
+
 }
+
 
 .animate-button {
     background-color: #4CAF50 !important;

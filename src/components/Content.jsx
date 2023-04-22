@@ -32,6 +32,7 @@ import { useSelector } from "react-redux";
 import Pdf from "../assets/pdf.pdf"
 import Devotee1 from "../assets/devotee1.jpg"
 import Devotee2 from "../assets/devotee2.jpg";
+import Namam from "../assets/namam.png"
 
 const Content = () => {
   const getLang = useSelector((state) => state.setLangReducerResult)
@@ -54,11 +55,15 @@ const Content = () => {
       <Avatar src={God} alt="" className="godImg" />
       <Box className="aboutHeader mt-12">
         <img src={Chakra1} className="chakraImg" />
-        <Typography component="h4" textAlign={"center"} fontWeight={600}>
-          {
-            lang ? <div style={{ display: "flex", justifyContent: "center", alignItems: "center", flexWrap: "wrap" }}><p className="paraFont">ಲೋಕ ಕಲ್ಯಾಣಾರ್ಥಕ್ಕಾಗಿ – </p><span className="spanFont">ಶ್ರೀ ಸುದರ್ಶನ ಮಹಾಯಾಗ</span></div> : "Shri Sudarshana Mahayaga"
-          }
-        </Typography>
+        {/* <Box className="centeringFlex">
+
+
+        </Box> */}
+        <Grid container spacing={2}>
+          <Grid item xs={12} md={12} lg={5} sx={{ display: "grid", placeItems: "center" }}><h4 style={{ marginRight: "6px" }}>ಲೋಕ ಕಲ್ಯಾಣಾರ್ಥಕ್ಕಾಗಿ </h4></Grid>
+          <Grid item xs={12} md={12} lg={2} sx={{ display: "grid", placeItems: "center" }}><img src={Namam} alt="" width={"72px"} /></Grid>
+          <Grid item xs={12} md={12} lg={5} sx={{ display: "grid", placeItems: "center" }}><h4 style={{ marginLeft: "6px" }}>ಶ್ರೀ ಸುದರ್ಶನ ಮಹಾಯಾಗ</h4></Grid>
+        </Grid>
         <img src={Chakra2} className="chakraImg" />
       </Box>
       <Box className="dateWrapper">
@@ -81,17 +86,27 @@ const Content = () => {
       </Box>
       <Box sx={{ px: "12%", width: "100%" }}>
         <Grid container spacing={2} sx={{ placeContent: "flex-start" }}>
-          <Grid item xs={4}>
-            <div style={{ width: "150px" }}>
+          <Grid item xs={6} md={6} lg={4}>
+            <div className="devoteeWrapper">
               <img src={Devotee1} alt="" className="devoteeImg" />
+              {
+                lang ? <><h4>ವೇದ ಬ್ರಹ್ಮ  ಶ್ರೀ ಸಿ. ಹೆಚ್. ಕೃಷ್ಣ ಶರ್ಮ
+                  ಶ್ರೀ ಲಕ್ಷ್ಮಿ ದೇವಸ್ಥಾನ
+                </h4></> : <><h4>Veda Brahma Shri C. H. Krishna Sharma
+                  Shri Lakshmi Temple</h4></>
+              }
             </div>
           </Grid>
-          <Grid item xs={4}>
-            <div style={{ width: "150px" }}>
+          <Grid item xs={6} md={6} lg={4}>
+            <div className="devoteeWrapper">
               <img src={Devotee2} alt="" className="devoteeImg" />
+              {
+                lang ? <><h4>ಪ್ರಸಿದ್ಧ ಜ್ಯೋತಿಷ್ಯರು</h4><br /><h4>ವೇದ ಬ್ರಹ್ಮ ಶ್ರೀ ಡಾ| ಭಾನು ಪ್ರಕಾಶ್ ಶರ್ಮ
+                </h4></> : <><h4>Popular jyotishi</h4><br /><h4>Veda Brahma Shri Dr. Bhanu Prakash Sharma</h4></>
+              }
             </div>
           </Grid>
-          <Grid item xs={4}></Grid>
+          {/* <Grid item xs={4}></Grid> */}
         </Grid>
       </Box>
       <Box sx={{ p: "12% 12% 0 12%" }}>
