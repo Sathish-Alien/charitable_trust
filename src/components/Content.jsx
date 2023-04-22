@@ -30,8 +30,8 @@ import Chakra2 from "../assets/shanka2.png";
 import God from "../assets/god.jpeg"
 import { useSelector } from "react-redux";
 import Pdf from "../assets/pdf.pdf"
-import Devotee1 from "../assets/devotee1.jpg"
-import Devotee2 from "../assets/devotee2.jpg";
+import Devotee1 from "../assets/devotee1-cropped.png"
+import Devotee2 from "../assets/devotee2-cropped.png";
 import Namam from "../assets/namam.png"
 
 const Content = () => {
@@ -86,27 +86,30 @@ const Content = () => {
       </Box>
       <Box sx={{ px: "12%", width: "100%" }}>
         <Grid container spacing={2} sx={{ placeContent: "flex-start" }}>
-          <Grid item xs={6} md={6} lg={4}>
-            <div className="devoteeWrapper">
-              <img src={Devotee1} alt="" className="devoteeImg" />
+          <Grid item xs={6} md={6} lg={6} className="centerGrid">
+            <div className="devoteeWrapper" style={{ marginTop: "18px" }}>
+              <div className="centerGrid">
+                <img src={Devotee2} alt="" className="devoteeImg" />
+              </div>
               {
-                lang ? <><h4>ವೇದ ಬ್ರಹ್ಮ  ಶ್ರೀ ಸಿ. ಹೆಚ್. ಕೃಷ್ಣ ಶರ್ಮ
-                  ಶ್ರೀ ಲಕ್ಷ್ಮಿ ದೇವಸ್ಥಾನ
-                </h4></> : <><h4>Veda Brahma Shri C. H. Krishna Sharma
-                  Shri Lakshmi Temple</h4></>
+                lang ? <div style={{ marginTop: "6px" }}><h4>ವೇದ ಬ್ರಹ್ಮ ಶ್ರೀ ಡಾ| ಭಾನು ಪ್ರಕಾಶ್ ಶರ್ಮ
+                </h4><h6 style={{ fontWeight: "normal" }}>ಪ್ರಸಿದ್ಧ ಜ್ಯೋತಿಷ್ಯರು</h6></div> : <div style={{ marginTop: "6px" }}><h4>Veda Brahma Shri Dr. Bhanu Prakash Sharma</h4><br /><h6 style={{ fontWeight: "normal" }}>Popular jyotishi</h6></div>
               }
             </div>
           </Grid>
-          <Grid item xs={6} md={6} lg={4}>
+          <Grid item xs={6} md={6} lg={6} className="centerGrid">
             <div className="devoteeWrapper">
-              <img src={Devotee2} alt="" className="devoteeImg" />
+              <div className="centerGrid">
+                <img src={Devotee1} alt="" className="devoteeImg" width={"72px"} />
+              </div>
               {
-                lang ? <><h4>ಪ್ರಸಿದ್ಧ ಜ್ಯೋತಿಷ್ಯರು</h4><br /><h4>ವೇದ ಬ್ರಹ್ಮ ಶ್ರೀ ಡಾ| ಭಾನು ಪ್ರಕಾಶ್ ಶರ್ಮ
-                </h4></> : <><h4>Popular jyotishi</h4><br /><h4>Veda Brahma Shri Dr. Bhanu Prakash Sharma</h4></>
+                lang ? <div style={{marginTop: "6px"}}><h4>ವೇದ ಬ್ರಹ್ಮ  ಶ್ರೀ ಸಿ. ಹೆಚ್. ಕೃಷ್ಣ ಶರ್ಮ</h4>
+                  <h6 style={{ fontWeight: "normal" }}>  ಶ್ರೀ ಲಕ್ಷ್ಮಿ ದೇವಸ್ಥಾನ
+                  </h6></div> : <div style={{marginTop: "6px"}}><h4>Veda Brahma Shri C. H. Krishna Sharma</h4><br />
+                  <h6 style={{ fontWeight: "normal" }}>Shri Lakshmi Temple</h6></div>
               }
             </div>
           </Grid>
-          {/* <Grid item xs={4}></Grid> */}
         </Grid>
       </Box>
       <Box sx={{ p: "12% 12% 0 12%" }}>

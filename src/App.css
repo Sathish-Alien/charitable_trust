@@ -314,8 +314,8 @@ th {
 }
 
 .devoteeImg {
-    width: 100%;
     height: 100px;
+    aspect-ratio: 2/2;
 }
 
 .btnWrapper {
@@ -339,6 +339,11 @@ th {
     justify-content: space-around;
     align-items: center;
     font-size: 60%;
+}
+
+.centerGrid {
+    display: grid;
+    place-items: center;
 }
 
 /* Media query for screens up to 768px */
@@ -412,6 +417,10 @@ th {
 
     .devoteeWrapper {
         width: 100px;
+    }
+
+    .devoteeImg {
+        padding-left: 0px;
     }
 
 }
