@@ -392,3 +392,61 @@ th {
     }
 
 }
+
+.animate-button {
+    background-color: #4CAF50 !important;
+    /* Green */
+    border: none !important;
+    color: white !important;
+    padding: 15px 32px !important;
+    text-align: center;
+    text-decoration: none !important;
+    display: inline-block !important;
+    font-size: 16px !important;
+    margin: 4px 2px !important;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    animation-name: example;
+    animation-duration: 2s;
+}
+
+.animate-shimmmer {
+    transition: 0.2s all linear;
+    animation: shimmer 2s infinite linear;
+    background: linear-gradient(to right, #00d3b4 4%, #dbdbdb 25%, #00d3b4 36%);
+    background-size: 1000px 100%;
+    width: 100px !important;
+    color: #fff !important;
+    margin: 0 0 12% 0 !important;
+    padding: 12px 0 !important;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -1000px 0;
+    }
+
+    100% {
+        background-position: 1000px 0;
+    }
+}
+
+@keyframes example {
+    0% {
+        background-color: #4CAF50;
+        left: 0px;
+        top: 0px;
+    }
+
+    50% {
+        background-color: #ff9800;
+        left: 200px;
+        top: 0px;
+    }
+
+    100% {
+        background-color: #4CAF50;
+        left: 0px;
+        top: 0px;
+    }
+}

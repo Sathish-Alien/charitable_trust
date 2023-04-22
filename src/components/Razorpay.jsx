@@ -21,7 +21,6 @@ function Razorpay() {
 
     const [inputs, setInputs] = useState({
         name: "",
-        mail: "",
         mobile: ""
     })
 
@@ -29,8 +28,6 @@ function Razorpay() {
         let { name, value } = e.target;
         if (name === "name") {
             setInputs({ ...inputs, name: value })
-        } else if (name === "email") {
-            setInputs({ ...inputs, mail: value })
         } else if (name === "mobile") {
             setInputs({ ...inputs, mobile: value })
         }
@@ -40,10 +37,8 @@ function Razorpay() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (amount === "" || inputs.name === "" || inputs.mail === "" || inputs.mobile === "") {
+        if (amount === "" || inputs.name === "" || inputs.mobile === "") {
             alert("please enter all fields");
-        } else if (!/^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/.test(inputs.mail)) {
-            alert("Please Enter Valid Mail")
         } else if (/^[6-9]\d{9}$/.test(inputs.mobile) === false) {
             alert("Please Enter Valid Mobile Number")
         } else {
@@ -55,11 +50,26 @@ function Razorpay() {
                 name: "Om Vishwa Mahaguru Bhagavan Kshetra Charitable Trust (R)",
                 description: "for testing purpose",
                 handler: function (response) {
-                    alert("Thank You");
+                    //alert("Thank You");
+                    console.log(response);
+                    fetch('http://charity.absotrix.com/api/RazorPayPPsave.php?name=' + inputs.name + '&phno=' + inputs.mobile + '&amt=' + amount + '&payid=' + response.razorpay_payment_id)
+                        .then(response => response.json())
+                        .then(data => {
+                            // Do something with the data
+                            console.log(data);
+
+                        })
+                        .catch(error => {
+                            // Handle any errors
+                            console.error(error);
+                        });
+                    setInputs({ name: "", mobile: "" })
+                    setamount("")
+
                 },
                 prefill: {
                     name: inputs.name,
-                    email: inputs.mail,
+                    email: "omvishwamahagurubhagavan05@gmail.com",
                     contact: inputs.mobile
                 },
                 notes: {
@@ -92,13 +102,12 @@ function Razorpay() {
             <br />
             <TextField className='paymentText' type="number" name="amount" placeholder='Enter Amount' value={amount} onChange={(e) => setamount(e.target.value)} />
             <TextField sx={{ mt: "2%" }} className='paymentText' type="text" name="name" placeholder='Enter Name' value={inputs.name} onChange={(e) => handleChange(e)} />
-            <TextField sx={{ mt: "2%" }} className='paymentText' name="email" placeholder='Enter Mail' value={inputs.mail} onChange={(e) => handleChange(e)} />
             <TextField sx={{ mt: "2%" }} inputProps={{ maxLength: 12 }} className='paymentText' type="number" onInput={(e) => {
                 e.target.value = Math.max(0, parseInt(e.target.value)).toString().slice(0, 10)
             }} name="mobile" placeholder='Enter Mobile Number' value={inputs.mobile} onChange={(e) => handleChange(e)} />
 
             <br /><br />
-            <Button onClick={handleSubmit}>Donate</Button>
+            <Button onClick={handleSubmit} className='animate-shimmmer'>Donate</Button>
         </Box>
 
     )

@@ -46,9 +46,9 @@ const Details = () => {
         <Typography component="p" sx={{ position: "relative", textAlign: "center", mt: "1%" }}><span className='trustAddress'>{
           lang ? "ಮಂಡ್ಯ ಜಿಲ್ಲೆ – 571438" : "Mandya District – 571438"
         }</span></Typography>
-        <Typography component="p" sx={{ position: "relative", textAlign: "center", mt: "1%" }}><span className='trustAddress'>{
+        {/* <Typography component="p" sx={{ position: "relative", textAlign: "center", mt: "1%" }}><span className='trustAddress'>{
           lang ? "ದಿನಾಂಕ: 09.06.2023 ರಿಂದ 11.06.2023" : "Date : 09.06.2023 to 11.06.2023"
-        }</span></Typography>
+        }</span></Typography> */}
       </Box>
       <Box style={{ width: "90%" }}>
         <Map height={300} defaultCenter={[12.426041617001717, 76.68140564113774]} defaultZoom={11}>
