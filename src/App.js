@@ -19,6 +19,8 @@ import { setLang, setLoader } from "./common/action";
 import LoaderWrapper from "./assets/ohm_circel.png";
 import Ohm from "./assets/Om_symbol.png";
 import Devotee from "./components/FullContent";
+import Disclaimer from "./components/Disclaimer";
+import Terms from "./components/Terms";
 
 function App() {
   const [language, setLanguage] = useState("Donate");
@@ -105,12 +107,16 @@ function App() {
             <Route path="/content" element={<FullContent />} />
             <Route path="/payment" element={<Payment />} />
             <Route path="/devotee" element={<Devotee />} />
+            <Route path="/disclaimer" element={<Disclaimer />} />
+            <Route path="/terms-of-use" element={<Terms />} />
+
             {/* </Suspense> */}
           </Routes>
         }
+            {loader === false && <Footer /> }
 
       </BrowserRouter>
-      {loader === false && <Footer />}
+      {/* {loader === false && <Footer /> } */}
     </>
   );
 }

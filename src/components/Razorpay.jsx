@@ -52,7 +52,7 @@ function Razorpay() {
                 handler: function (response) {
                     //alert("Thank You");
                     console.log(response);
-                    fetch('http://charity.absotrix.com/api/RazorPayPPsave.php?name=' + inputs.name + '&phno=' + inputs.mobile + '&amt=' + amount + '&payid=' + response.razorpay_payment_id)
+                    fetch('https://omvishwamahagurubhagavankshetracharitabletrust.com/api/RazorPayPPsave.php?name=' + inputs.name + '&phno=' + inputs.mobile + '&amt=' + amount + '&payid=' + response.razorpay_payment_id)
                         .then(response => response.json())
                         .then(data => {
                             // Do something with the data

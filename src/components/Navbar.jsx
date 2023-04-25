@@ -53,10 +53,10 @@ const Navbar = () => {
       text: "Yaga",
       to: "/yaga",
     },
-    {
-      text: "Devotee",
-      to: "/devotee",
-    },
+    // {
+    //   text: "Devotee",
+    //   to: "/devotee",
+    // },
     {
       text: "Contact",
       to: "/contact",

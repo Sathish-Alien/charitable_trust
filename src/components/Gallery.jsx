@@ -8,7 +8,8 @@ import {
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 // components
-import Temple from "../assets/temple.jpg"
+import Temple from "../assets/pdf_page-0001-min.jpg"
+import Temple1 from "../assets/pdf_page-0002-min.jpg"
 
 const Gallery = () => {
 
@@ -21,20 +22,20 @@ const Gallery = () => {
         },
         {
             alt: 'image2',
-            url: Temple
+            url: Temple1
         },
-        {
-            alt: "image3",
-            url: Temple
-        },
-        {
-            alt: "image4",
-            url: Temple
-        },
-        {
-            alt: "image5",
-            url: Temple
-        },
+        // {
+        //     alt: "image3",
+        //     url: Temple
+        // },
+        // {
+        //     alt: "image4",
+        //     url: Temple
+        // },
+        // {
+        //     alt: "image5",
+        //     url: Temple
+        // },
     ];
 
     const renderSlides = imageData.map((image) => (
