@@ -44,11 +44,11 @@ const itemList = [
     icon: <InfoIcon />,
     to: "/yaga"
   },
-  {
-    text: "Devotee",
-    icon: <PeopleIcon />,
-    to: "/devotee"
-  },
+  // {
+  //   text: "Devotee",
+  //   icon: <PeopleIcon />,
+  //   to: "/devotee"
+  // },
   {
     text: "Contact",
     icon: <EmailIcon />,
