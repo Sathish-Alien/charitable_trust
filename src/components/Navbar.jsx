@@ -53,6 +53,10 @@ const Navbar = () => {
       text: "Yaga",
       to: "/yaga",
     },
+    {
+      text: "About us",
+      to: "/about-us",
+    },
     // {
     //   text: "Devotee",
     //   to: "/devotee",
@@ -108,6 +112,7 @@ const Navbar = () => {
                   component={Link}
                   to={item.to}
                   sx={{
+                    "white-space": "nowrap",
                     color: "#fff",
                     "&:hover": {
                       backgroundColor: "transparent",

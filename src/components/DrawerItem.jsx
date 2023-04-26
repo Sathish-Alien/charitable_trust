@@ -21,6 +21,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import PeopleIcon from '@mui/icons-material/People';
+import ContactEmergencyIcon from '@mui/icons-material/ContactEmergency';
 
 const drawerWidth = 240;
 
@@ -43,6 +44,11 @@ const itemList = [
     text: "Yaga",
     icon: <InfoIcon />,
     to: "/yaga"
+  },
+  {
+    text: "About us",
+    icon: <ContactEmergencyIcon />,
+    to: "/about-us"
   },
   // {
   //   text: "Devotee",

@@ -21,6 +21,7 @@ import Ohm from "./assets/Om_symbol.png";
 import Devotee from "./components/FullContent";
 import Disclaimer from "./components/Disclaimer";
 import Terms from "./components/Terms";
+import Aboutus from "./components/Aboutus";
 
 function App() {
   const [language, setLanguage] = useState("Donate");
@@ -107,6 +108,7 @@ function App() {
             <Route path="/content" element={<FullContent />} />
             <Route path="/payment" element={<Payment />} />
             <Route path="/devotee" element={<Devotee />} />
+            <Route path="/about-us" element={<Aboutus />} />
             <Route path="/disclaimer" element={<Disclaimer />} />
             <Route path="/terms-of-use" element={<Terms />} />
 
