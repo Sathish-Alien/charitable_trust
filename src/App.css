@@ -407,6 +407,7 @@ th {
         font-size: 8px !important;
     }
 
+<<<<<<< HEAD
     .trustAddress {
         font-size: 50%;
         font-family: 'Roboto Slab', serif;
@@ -437,10 +438,24 @@ th {
     display: inline-block !important;
     font-size: 16px !important;
     margin: 4px 2px !important;
+=======
+}
+.animate-button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+>>>>>>> b1df307a59c6ce790b3bec1d3196e46c447bb475
     cursor: pointer;
     transition-duration: 0.4s;
     animation-name: example;
     animation-duration: 2s;
+<<<<<<< HEAD
 }
 
 .animate-shimmmer {
@@ -483,3 +498,13 @@ th {
         top: 0px;
     }
 }
+=======
+  }
+  
+  @keyframes example {
+    0%   {background-color: #4CAF50; left:0px; top:0px;}
+    50%  {background-color: #ff9800; left:200px; top:0px;}
+    100% {background-color: #4CAF50; left:0px; top:0px;}
+  }
+  
+>>>>>>> b1df307a59c6ce790b3bec1d3196e46c447bb475

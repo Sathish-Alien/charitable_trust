@@ -112,7 +112,7 @@ const Navbar = () => {
                   component={Link}
                   to={item.to}
                   sx={{
-                    "white-space": "nowrap",
+                    "white-space": "nowrap", 
                     color: "#fff",
                     "&:hover": {
                       backgroundColor: "transparent",

@@ -79,13 +79,19 @@ const Content = () => {
       </Box>
       <Box className="dateWrapper">
         {
+<<<<<<< HEAD
           lang ? <h4>ಓಂ ವಿಶ್ವ ಮಹಾಗುರು ಭಗವಾನ್ ರವರ ಪ್ರೇರಣೆಯಿಂದ ನವಗ್ರಹದ ಗುರುದೇವರ ದೇವಸ್ಥಾನವನ್ನು ಐತಿಹಾಸಿಕ ಪ್ರಸಿದ್ದವಾದ ಶ್ರೀರಂಗಪಟ್ಟಣದಲ್ಲಿ ಸ್ಥಾಪನೆ ಮಾಡುತ್ತಿದ್ದೇವೆ. ಎಲ್ಲರಿಗೂ ಗುರು ಬಲವು ಮುಖ್ಯವಾಗಿ ಬೇಕಾಗಿರುತ್ತದೆ. ಆದುದರಿಂದ ಗುರುಪೂಜೆಯನ್ನು ಮಾಡಲಾಗುತ್ತದೆ. ಈ ಗುರು ದೇವರ ದೇವಸ್ಥಾನವನ್ನು ಮಾಡಲು ಓಂ ವಿಶ್ವ ಮಹಾಗುರು ಭಗವಾನ್ ಕ್ಷೇತ್ರ ಚಾರಿಟೇಬಲ್ ಟ್ರಸ್ಟ್ (ರಿ) ಸಂಸ್ಥೆಯಿಂದ ಆಯೋಜನೆ ಮಾಡುತ್ತಿದ್ದೇವೆ. ಶ್ರೀರಂಗಪಟ್ಟಣದಲ್ಲಿ ಶ್ರೀ ರಂಗನಾಥಸ್ವಾಮಿಯ ಶಕ್ತಿಯು ಅಪಾರವಾದುದ್ದು. ಇಲ್ಲಿ 30 ವರ್ಷಗಳ ಹಿಂದೆ ಯಾಗವನ್ನು ಮಾಡಿದ್ದು ಎಂದು ತಿಳಿದು ಬಂದಿದೆ. ಈ ಸಂಸ್ಥೆಯು ಇದೇ ಸ್ಥಳದಲ್ಲಿ ಯಾಗವನ್ನು ಮಾಡಲು ಹಾಗು ಇಲ್ಲಿ ಶ್ರೀ ರಂಗನಾಥ್ ಸ್ವಾಮಿ ನೆಲಸಿಕೊಡುವದರಿಂದ ಶ್ರೀ ಸುಧರ್ಶನ್ ಮಹಾಯಾಗವನ್ನು ಮಾಡಲು ಆಯೋಜಿಸಲಾಗಿದೆ ಈ ಮಹಾಯಾಗದಲ್ಲಿ ಐದು ನದಿಗಳ್ ಜಲಭರಿತ್ 108 ಕೇಶಗಲ್ಲಿದ್ದು 11 ಹೋಮ ಕುಂಡಲಗಳನ್ನು ಸ್ಥಾಪಿಸಿ ಸುಮಾರು 130  ಜನ ಪ್ರಸಿದ್ಧ ಪುರೋಹಿತರಿಂದ್ ಪ್ರತಿ ದಿನವೂ ಬೇರೆ ಬೇರೆ ಪೂಜೆ ಹೋಮಗಳು ನಡೆಯಲಿದೆ .ಪ್ರತಿದಿನವೂ ಪ್ರಸಾದ್ ವಿನಿಯೋಗ  ಇರಲಿದ್ದು. ಮಧ್ಯಾಹ್ನ ಅನ್ನದಾನ ಇರುತ್ತದೆ. ಈ ಜನ್ಮದಲ್ಲಿ ಒಮ್ಮೆ ದೋರೆಯಬಹುದಾದ 4 ದಿನಗಳವರೆಗೆ ಈ ಮಹಾ ಮಹತ್ವ ಕಾರ್ಯದಲ್ಲಿ ಪರಮ ಪೂಜ್ಯರಾದ ಜಗದ್ಗುರು ಶ್ರೀ ಶ್ರೀ ಶ್ರೀ ಭಾರತಿ ತೀರ್ಥ ಮಹಾಸ್ವಾಮೀಜಿಗಳು ಶೃಂಗೇರಿ ಮಹಾಸಂಸ್ಥಾನ ಮಠ ಮತ್ತು ಪೂಜ್ಯರಾದ ಡಾ|| ಡಿ. ವೀರೇಂದ್ರ ಹೆಗ್ಗಡೆ ರವರು ಧರ್ಮಾಧಿಕಾರಿಗಳು ಶ್ರೀ ಕ್ಷೇತ್ರ ಧರ್ಮಸ್ಥಳ ಇವರುಗಳ ಆಶೀರ್ವಾದಗಳೊಂದಿಗೆ ನಡೆಯಲಿರುವ ಕಾರ್ಯದಲ್ಲಿ ಲಕ್ಷಾಂತರ ಸಂಖ್ಯೆಯ ಭಕ್ತಾಧಿಗಳು ಭಾಗವಹಿಸಲಿದ್ದಾರೆ. ಭಗವದ್ಭಕ್ತರು ಲೋಕ ಕಲ್ಯಾಣಾರ್ಥಕ್ಕಾಗಿ ನಡೆಯಲಿರುವ ಶ್ರೀ ಸುದರ್ಶನ ಮಹಾಯಾಗ ಎಂಬ ದೈವ ಕಾರ್ಯಕ್ಕೆ ಅನ್ನದಾನಕ್ಕಾಗಿ ತಮ್ಮ ಕೈಲಾದಷ್ಟು ಧನ ಸಹಾಯ ಮಾಡಿ ತಮ್ಮ ತಾನು ಮನ ಧನ ಸಹಾಯದೊಂದಿಗೆ ಈ ಪುಣ್ಯಕಾರ್ಯದಲ್ಲಿ ಭಾಗವಹಿಸಿ ಓಂ ಗುರು ಭಗವಾನ್ ರವರ ಹಾಗೂ ಶ್ರೀ
             ರಂಗನಾಥಸ್ವಾಮಿ ಕೃಪಾಶೀರ್ವಾದಗಳಿಗೆ ಪಾತ್ರರಾಗಿ ಪುನೀತರಾಗಬೇಕೆಂದು ವಿನಂತಿಸಿಕೊಳ್ಳುತ್ತೇವೆ.</h4> : <h4>With the inspiration of Om Vishwa Mahaguru Bhagavan, we are establishing Navagraha Gurudeva Temple in the historic Srirangapatna. Guru Bala is essential for everyone. Hence Guru Puja is done. Om Vishwa Mahaguru Bhagavan Kshetra Charitable Trust (R) is planning to make this Guru Deva temple. Sri Ranganathaswamy's power in Srirangapatna was immense. It is known that Yaga was performed here 30 years ago. This organization is organized to do Yaga at this place and Sri Sudharshan Mahayaga is organized here because of Sri Ranganath Swami. In this Mahayaga there are five rivers flowing in 108 keshas and 11 Homa Kundals are established and around 130 famous priests will perform different puja homas every day. There will be refreshments in the afternoon. For 4 days which can only be visited once in this life, in this great important work, the most revered Jagadguru Sri Sri Bharati Theertha Mahaswamiji of Sringeri Mahasansthan Math and revered Dr|| D. Lakhs of devotees will participate in the function to be held with the blessings of Virendra Heggade's Dharmadhikari Sri Kshetra Dharmasthala. We request the devotees to donate as much money as they can for the food donation for the divine work of Shri Sudarshan Mahayaga to be held for the welfare of the world and participate in this meritorious work with the help of mana dhan and get blessed by the blessings of Lord Om Guru and Sri Ranganathaswamy.</h4>
+=======
+          lang ? <h4>ಓಂ ವಿಶ್ವ ಮಹಾಗುರು ಭಗವಾನ್ ರವರ ಪ್ರೇರಣೆಯಿಂದ ನವಗ್ರಹದ ಗುರುದೇವರ ದೇವಸ್ಥಾನವನ್ನು ಐತಿಹಾಸಿಕ ಪ್ರಸಿದ್ದವಾದ ಶ್ರೀರಂಗಪಟ್ಟಣದಲ್ಲಿ ಸ್ಥಾಪನೆ ಮಾಡುತ್ತಿದ್ದೇವೆ. ಎಲ್ಲರಿಗೂ ಗುರು ಬಲವು ಮುಖ್ಯವಾಗಿ ಬೇಕಾಗಿರುತ್ತದೆ. ಆದುದರಿಂದ ಗುರುಪೂಜೆಯನ್ನು ಮಾಡಲಾಗುತ್ತದೆ. ಈ ಗುರು ದೇವರ ದೇವಸ್ಥಾನವನ್ನು ಮಾಡಲು ಓಂ ವಿಶ್ವ ಮಹಾಗುರು ಭಗವಾನ್ ಕ್ಷೇತ್ರ ಚಾರಿಟೇಬಲ್ ಟ್ರಸ್ಟ್ (ರಿ) ಸಂಸ್ಥೆಯಿಂದ ಆಯೋಜನೆ ಮಾಡುತ್ತಿದ್ದೇವೆ. ಶ್ರೀರಂಗಪಟ್ಟಣದಲ್ಲಿ ಶ್ರೀ ರಂಗನಾಥಸ್ವಾಮಿಯ ಶಕ್ತಿಯು ಅಪಾರವಾದುದ್ದು. ಇಲ್ಲಿ 30 ವರ್ಷಗಳ ಹಿಂದೆ ಯಾಗವನ್ನು ಮಾಡಿದ್ದು ಎಂದು ತಿಳಿದು ಬಂದಿದೆ. ಈ ಸಂಸ್ಥೆಯು ಇದೇ ಸ್ಥಳದಲ್ಲಿ ಯಾಗವನ್ನು ಮಾಡಲು ಹಾಗು ಇಲ್ಲಿ ಶ್ರೀ ರಂಗನಾಥ್ ಸ್ವಾಮಿ ನೆಲಸಿಕೊಡುವದರಿಂದ ಶ್ರೀ ಸುಧರ್ಶನ್ ಮಹಾಯಾಗವನ್ನು ಮಾಡಲು ಆಯೋಜಿಸಲಾಗಿದೆ ಈ ಮಹಾಯಾಗದಲ್ಲಿ ಐದು ನದಿಗಳ್ ಜಲಭರಿತ್ 108 ಕೇಶಗಲ್ಲಿದ್ದು 11 ಹೋಮ ಕುಂಡಲಗಳನ್ನು ಸ್ಥಾಪಿಸಿ ಸುಮಾರು 130  ಜನ ಪ್ರಸಿದ್ಧ ಪುರೋಹಿತರಿಂದ್ ಪ್ರತಿ ದಿನವೂ ಬೇರೆ ಬೇರೆ ಪೂಜೆ ಹೋಮಗಳು ನಡೆಯಲಿದೆ .ಪ್ರತಿದಿನವೂ ಪ್ರಸಾದ್ ವಿನಿಯೋಗ  ಇರಲಿದ್ದು. ಮಧ್ಯಾಹ್ನ ಅನ್ನದಾನ ಇರುತ್ತದೆ. ಈ ಜನ್ಮದಲ್ಲಿ ಒಮ್ಮೆ ದೋರೆಯಬಹುದಾದ 4 ದಿನಗಳವರೆಗೆ ಈ ಮಹಾ ಮಹತ್ವ ಕಾರ್ಯದಲ್ಲಿ ಪರಮ ಪೂಜ್ಯರಾದ ಜಗದ್ಗುರು ಶ್ರೀ ಶ್ರೀ ಶ್ರೀ ಭಾರತಿ ತೀರ್ಥ ಮಹಾಸ್ವಾಮೀಜಿಗಳು ಶೃಂಗೇರಿ ಮಹಾಸಂಸ್ಥಾನ ಮಠ ಮತ್ತು ಪೂಜ್ಯರಾದ ಡಾ|| ಡಿ. ವೀರೇಂದ್ರ ಹೆಗ್ಗಡೆ ರವರು ಧರ್ಮಾಧಿಕಾರಿಗಳು ಶ್ರೀ ಕ್ಷೇತ್ರ ಧರ್ಮಸ್ಥಳ ಇವರುಗಳ ಆಶೀರ್ವಾದಗಳೊಂದಿಗೆ ನಡೆಯಲಿರುವ ಕಾರ್ಯದಲ್ಲಿ ಲಕ್ಷಾಂತರ ಸಂಖ್ಯೆಯ ಭಕ್ತಾಧಿಗಳು ಭಾಗವಹಿಸಲಿದ್ದಾರೆ. ಭಗವದ್ಭಕ್ತರು ಲೋಕ ಕಲ್ಯಾಣಾರ್ಥಕ್ಕಾಗಿ ನಡೆಯಲಿರುವ ಶ್ರೀ ಸುದರ್ಶನ ಮಹಾಯಾಗ ಎಂಬ ದೈವ ಕಾರ್ಯಕ್ಕೆ ಅನ್ನದಾನಕ್ಕಾಗಿ ತಮ್ಮ ಕೈಲಾದಷ್ಟು ಧನ ಸಹಾಯ ಮಾಡಿ ತಮ್ಮ ತಾನು ಮನ ಧನ ಸಹಾಯದೊಂದಿಗೆ ಈ ಪುಣ್ಯಕಾರ್ಯದಲ್ಲಿ ಭಾಗವಹಿಸಿ ಓಂ ಗುರು ಭಗವಾನ್ ರವರ ಹಾಗೂ ಶ್ರೀ 
+          ರಂಗನಾಥಸ್ವಾಮಿ ಕೃಪಾಶೀರ್ವಾದಗಳಿಗೆ ಪಾತ್ರರಾಗಿ ಪುನೀತರಾಗಬೇಕೆಂದು ವಿನಂತಿಸಿಕೊಳ್ಳುತ್ತೇವೆ.</h4> : <h4>With the inspiration of Om Vishwa Mahaguru Bhagavan, we are establishing Navagraha Gurudeva Temple in the historic Srirangapatna. Guru Bala is essential for everyone. Hence Guru Puja is done. Om Vishwa Mahaguru Bhagavan Kshetra Charitable Trust (R) is planning to make this Guru Deva temple. Sri Ranganathaswamy's power in Srirangapatna was immense. It is known that Yaga was performed here 30 years ago. This organization is organized to do Yaga at this place and Sri Sudharshan Mahayaga is organized here because of Sri Ranganath Swami. In this Mahayaga there are five rivers flowing in 108 keshas and 11 Homa Kundals are established and around 130 famous priests will perform different puja homas every day. There will be refreshments in the afternoon. For 4 days which can only be visited once in this life, in this great important work, the most revered Jagadguru Sri Sri Bharati Theertha Mahaswamiji of Sringeri Mahasansthan Math and revered Dr|| D. Lakhs of devotees will participate in the function to be held with the blessings of Virendra Heggade's Dharmadhikari Sri Kshetra Dharmasthala. We request the devotees to donate as much money as they can for the food donation for the divine work of Shri Sudarshan Mahayaga to be held for the welfare of the world and participate in this meritorious work with the help of mana dhan and get blessed by the blessings of Lord Om Guru and Sri Ranganathaswamy.</h4>
+>>>>>>> b1df307a59c6ce790b3bec1d3196e46c447bb475
         }
 
       </Box>
       <Box sx={{ px: "12%", width: "100%" }}>
         <Grid container spacing={2} sx={{ placeContent: "flex-start" }}>
+<<<<<<< HEAD
           <Grid item xs={6} md={6} lg={6} className="centerGrid">
             <div className="devoteeWrapper" style={{ marginTop: "18px" }}>
               <div className="centerGrid">
@@ -110,6 +116,19 @@ const Content = () => {
               }
             </div>
           </Grid>
+=======
+          <Grid item xs={4}>
+            <div style={{ width: "150px" }}>
+              <img src={Devotee1} alt="" className="devoteeImg" />
+            </div>
+          </Grid>
+          <Grid item xs={4}>
+            <div style={{ width: "150px" }}>
+              <img src={Devotee2} alt="" className="devoteeImg" />
+            </div>
+          </Grid>
+          <Grid item xs={4}></Grid>
+>>>>>>> b1df307a59c6ce790b3bec1d3196e46c447bb475
         </Grid>
       </Box>
       <Box sx={{ p: "12% 12% 0 12%" }}>
@@ -256,7 +275,11 @@ const Content = () => {
           target="_blank"
           rel="noopener noreferrer"><Button download="Pamplet" className="dwnldBtn" >Download</Button></a>
       </Box>
+<<<<<<< HEAD
 
+=======
+      
+>>>>>>> b1df307a59c6ce790b3bec1d3196e46c447bb475
       {/* </Grid> */}
     </Grid >
   );

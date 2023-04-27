@@ -37,7 +37,11 @@ function Razorpay() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+<<<<<<< HEAD
         if (amount === "" || inputs.name === "" || inputs.mobile === "") {
+=======
+        if (amount === "" || inputs.name === ""  || inputs.mobile === "") {
+>>>>>>> b1df307a59c6ce790b3bec1d3196e46c447bb475
             alert("please enter all fields");
         } else if (/^[6-9]\d{9}$/.test(inputs.mobile) === false) {
             alert("Please Enter Valid Mobile Number")
@@ -52,19 +56,32 @@ function Razorpay() {
                 handler: function (response) {
                     //alert("Thank You");
                     console.log(response);
+<<<<<<< HEAD
                     fetch('https://omvishwamahagurubhagavankshetracharitabletrust.com/api/RazorPayPPsave.php?name=' + inputs.name + '&phno=' + inputs.mobile + '&amt=' + amount + '&payid=' + response.razorpay_payment_id)
+=======
+                    fetch('http://charity.absotrix.com/api/RazorPayPPsave.php?name='+inputs.name+'&phno='+inputs.mobile+'&amt='+amount+'&payid='+response.razorpay_payment_id)
+>>>>>>> b1df307a59c6ce790b3bec1d3196e46c447bb475
                         .then(response => response.json())
                         .then(data => {
                             // Do something with the data
                             console.log(data);
+<<<<<<< HEAD
 
+=======
+                            
+>>>>>>> b1df307a59c6ce790b3bec1d3196e46c447bb475
                         })
                         .catch(error => {
                             // Handle any errors
                             console.error(error);
                         });
+<<<<<<< HEAD
                     setInputs({ name: "", mobile: "" })
                     setamount("")
+=======
+                        setInputs({name: "",mobile: ""})
+                        setamount("")
+>>>>>>> b1df307a59c6ce790b3bec1d3196e46c447bb475
 
                 },
                 prefill: {
@@ -107,7 +124,11 @@ function Razorpay() {
             }} name="mobile" placeholder='Enter Mobile Number' value={inputs.mobile} onChange={(e) => handleChange(e)} />
 
             <br /><br />
+<<<<<<< HEAD
             <Button onClick={handleSubmit} className='animate-shimmmer'>Donate</Button>
+=======
+            <Button onClick={handleSubmit}  className='animate-button'>Donate</Button>
+>>>>>>> b1df307a59c6ce790b3bec1d3196e46c447bb475
         </Box>
 
     )
